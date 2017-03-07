@@ -1,32 +1,46 @@
 .demo-card-square.mdl-card {
-  width: 125px;
-  height: 125px;
-  float: left;
-  margin: 10px;
+    width: 125px;
+    height: 125px;
+    float: left;
+    margin: 10px;
 }
 .demo-card-square > .mdl-card__title {
-  color: #fff;
-  background: #46B6AC;
+    color: #fff;
+    background: #46B6AC;
 }
 
 body {
-  padding: 20px;
-  background: #fafafa;
-  position: relative;
+    height: 100%;
+    min-height: 100%;
+    padding: 20px;
+    background: #fafafa;
+    position: relative;
 }
 
 form {
-  margin: 10px;
+    margin: 10px;
 }
 
 .mdl-button {
-  margin: 0 10 10 10;
-  float: left;
+    margin: 0 10 10 10;
+    float: left;
 }
 
 .upfront-info {
-  margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
-
-/*url('https://getmdl.io/assets/demos/dog.png') bottom right 15% no-repeat */
+.footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    clear: both;
+    /*position: relative;*/
+    z-index: 10;
+    /*height: 3em;
+    margin-top: -1em;*/
+}

@@ -1,5 +1,6 @@
 var first, mid, last, val, tileVals;
 var elems = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+// var elemsLarge = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var chip1 = '<span class="mdl-chip mdl-chip--contact"><span class="mdl-chip__contact mdl-color--Indigo mdl-color-text--white">';
 var chip1DO = '<span class="mdl-chip mdl-chip--contact"><span class="mdl-chip__contact mdl-color--Deep-Orange mdl-color-text--white">';
 var chip2 = '</span><span class="mdl-chip__text">';
@@ -13,9 +14,9 @@ $(function () {
     $(".reset").on("click", function () {
         $(".tiles").children().remove();
         $(".mdl-textfield__input").val("");
-        // $(".mdl-textfield__label").text("Search Text...");
         initalSetup(elems);
         main();
+        enableStepStart();
     });
 
     $(".start").on("click", function () {
